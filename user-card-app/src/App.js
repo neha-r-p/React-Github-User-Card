@@ -17,6 +17,7 @@ class App extends React.Component {
     axios.get('https://api.github.com/users/neha-r-p')
     .then(res => {
       console.log(res.data)
+      this.setState({userCards: res.data})
     })
     .catch(err => {
       console.log(err)
