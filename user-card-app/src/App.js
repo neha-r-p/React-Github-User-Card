@@ -6,14 +6,18 @@ class App extends React.Component {
   constructor(){
     super();
     this.state = {
-      
+      userCards: []
     }
+  }
+
+  componentWillMount() {
+    console.log('mounted')
   }
 
   render(){
     return (
     <div className="App">
-     working!
+     <h1>React Github User Card</h1>
     </div>
   );
   }
