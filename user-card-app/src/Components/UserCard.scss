@@ -1,5 +1,20 @@
 .github-profile {
-    h2 {
-        color: red;
-    }
+  width: 80%;
+  margin: 0 auto;
+  h2 {
+    color: red;
+  }
+  .userPic {
+    width: 30%;
+  }
+}
+
+.follower-cards {
+    display:flex;
+    flex-wrap: wrap;
+    
+  div {
+    width: 20%;
+    margin:20px;
+  }
 }
