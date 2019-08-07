@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './UserCard.scss'
 
 function UserCard(props){
     console.log(props.followers)

@@ -2,7 +2,7 @@ import React from "react";
 import axios from "axios";
 import UserCard from "./Components/UserCard";
 
-import "./App.css";
+import "./App.scss";
 
 class App extends React.Component {
   constructor() {
