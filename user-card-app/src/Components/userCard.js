@@ -2,7 +2,7 @@ import React from 'react';
 
 
 function UserCard(props){
-    console.log(props.userInfo.login)
+    console.log(props.followers)
     return(
         <>
         <div className="github-profile">
@@ -11,6 +11,12 @@ function UserCard(props){
             <img src={props.userInfo.avatar_url} alt="avatar" />
         </div>
         <div className="follower-cards">
+            {props.followers.map(follower => 
+                <div key={follower.id}>
+                    <h2>{follower.login}</h2>
+                    <img src={follower.avatar_url} alt="avatar" />
+                </div>
+            )}
 
         </div>
         </>
